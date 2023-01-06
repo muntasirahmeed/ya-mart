@@ -7,7 +7,7 @@ const App = () => {
 		<>
 			<Routes>
 				{publicRoutes.map(({id, path, Page}) => (
-					<Route key={id} path={path} element={Page} />
+					<Route key={id} path={path} element={<Page />} />
 				))}
 			</Routes>
 		</>

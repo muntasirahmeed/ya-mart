@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import ECommerceLayout from "../../components/layouts/ECommerceLayout";
 
 const Dashboard = () => {
-  return (
-    <div>Dashboard</div>
-  )
-}
+	return (
+		<ECommerceLayout>
+			<div> Dashboard </div>
+		</ECommerceLayout>
+	);
+};
 
-export default Dashboard
+export default Dashboard;
