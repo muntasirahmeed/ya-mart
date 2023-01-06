@@ -7,7 +7,11 @@ const ProductsTable = () => {
 				<thead className="bg-gray-100">
 					<tr className="font-medium text-left text-darken">
 						<th className="sticky inset-y-0 left-0 bg-gray-100 px-4 py-3 text-left">
-							<input className="h-4 cursor-pointer w-4 rounded border-gray-200" type="checkbox" id="SelectAll" />
+							<input
+								className="h-4 cursor-pointer w-4 rounded border-gray-200 text-primary focus:ring-primary"
+								type="checkbox"
+								id="SelectAll"
+							/>
 						</th>
 						{tableData.header.map((each) => (
 							<th key={each.id} className="whitespace-nowrap px-4 py-3">
@@ -20,7 +24,11 @@ const ProductsTable = () => {
 					{tableData.row.map((each) => (
 						<tr key={each.id}>
 							<td className="sticky inset-y-0 left-0 bg-white px-4 py-3">
-								<input className="h-4 w-4 cursor-pointer rounded border-gray-200" type="checkbox" id={each.id} />
+								<input
+									className="h-4 w-4 cursor-pointer rounded border-gray-200 text-primary focus:ring-primary"
+									type="checkbox"
+									id={each.id}
+								/>
 							</td>
 							<td className="whitespace-nowrap px-4 py-3 ">{each.title}</td>
 							<td className="whitespace-nowrap px-4 py-3 ">{each.category}</td>

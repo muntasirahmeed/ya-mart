@@ -5,6 +5,7 @@ import PrivacyAndPolicy from "../pages/authentication/PrivacyAndPolicy";
 import Registration from "../pages/authentication/registration/Registration";
 import TermsAndCondition from "../pages/authentication/TermsAndCondition";
 import Dashboard from "../pages/dashboard/Dashboard";
+import ProductDetails from "../pages/ecommerce/product-detials/ProductDetails";
 import Products from "../pages/ecommerce/products/Products";
 
 export const publicRoutes = [
@@ -16,4 +17,5 @@ export const publicRoutes = [
 	{id: 6, path: "/terms-and-conditions", Page: TermsAndCondition},
 	{id: 7, path: "/", Page: Dashboard},
 	{id: 8, path: "/products", Page: Products},
+	{id: 9, path: "/product-details", Page: ProductDetails},
 ];

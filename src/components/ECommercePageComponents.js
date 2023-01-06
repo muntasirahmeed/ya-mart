@@ -53,7 +53,5 @@ export const tableData = {
 		{id: 12, title: "Lago di Sorapis - Canvas Print", category: "Canvas Print", quantity: 10, status: "refunded"},
 		{id: 13, title: "Never Stop Changing - Canvas Print", category: "Canvas Print", quantity: 10, status: "paid"},
 		{id: 14, title: "Reaching - Canvas Print", category: "Canvas Print", quantity: 10, status: "refunded"},
-		{id: 15, title: "Morain Lake - Canvas Print", category: "Canvas Print", quantity: 10, status: "cancelled"},
-		{id: 16, title: "Yosemite - Canvas Print", category: "Canvas Print", quantity: 10, status: "refunded"},
 	],
 };
