@@ -12,7 +12,7 @@ const ProductDetails = () => {
 					<FontAwesomeIcon icon={faArrowLeft} />
 					<h4 className="font-sans-pro text-lg font-semibold">Products</h4>
 				</Link>
-				<div className="flex mt-6 items-center justify-between">
+				<div className="flex mt-6 gap-10 items-center justify-between">
 					<div className="flex items-center gap-4">
 						<img
 							src="https://img.freepik.com/free-photo/portrait-successful-man-having-stubble-posing-with-broad-smile-keeping-arms-folded_171337-1267.jpg?w=2000"
@@ -36,7 +36,7 @@ const ProductDetails = () => {
 						</button>
 					</div>
 				</div>
-				<div className="mt-10">
+				<div className="mt-10 pb-10">
 					<Tabs />
 				</div>
 			</div>

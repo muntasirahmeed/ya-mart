@@ -3,9 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React from "react";
 import {menDummyImg} from "../../components/ECommercePageComponents";
 import DashboardLayout from "../../components/layouts/DashboardLayout";
-import ECommerceLayout from "../../components/layouts/ECommerceLayout";
 import HomeTabs from "./HomeTabs";
-
 const Dashboard = () => {
 	return (
 		<DashboardLayout>

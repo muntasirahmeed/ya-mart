@@ -1,0 +1,25 @@
+export const tableData = {
+	header: [
+		{id: 1, title: "Name"},
+		{id: 2, title: "Category"},
+		{id: 3, title: "Price"},
+		{id: 4, title: "Quantity"},
+		{id: 5, title: "Active"},
+	],
+	row: [
+		{id: 1, title: "A Walk Amongst Friends - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 2, title: "Braies Lake - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 3, title: "Fall Glow - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 4, title: "First Snow - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 5, title: "Lago di Braies - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 6, title: "Indian Citizen", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 7, title: "Lago di Sorapis - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 8, title: "Never Stop Changing - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 9, title: "Reaching - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 10, title: "Morain Lake - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 11, title: "Yosemite - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 12, title: "Lago di Sorapis - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 13, title: "Never Stop Changing - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+		{id: 14, title: "Reaching - Canvas Print", category: "Canvas Print", quantity: 10, price: 10},
+	],
+};

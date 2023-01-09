@@ -9,7 +9,7 @@ export const FormLabel = ({text}) => {
 };
 export const AuthPageTopInfo = ({title, subtitle, linkText, path}) => {
 	return (
-		<div className="mb-7">
+		<div className="mb-7 ">
 			<img src={logo} className="h-20 relative -left-2 mb-3" alt="" />
 			<h2 className="text-4xl tracking-wide text-darken font-bold font-sans-pro">{title}</h2>
 			<p className="text-sm text-gray-600 mt-1 ">

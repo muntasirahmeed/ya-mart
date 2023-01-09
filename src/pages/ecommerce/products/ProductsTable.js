@@ -1,5 +1,6 @@
 import React from "react";
-import {Pagination, tableData} from "../../../components/ECommercePageComponents";
+import {Pagination} from "../../../components/ECommercePageComponents";
+import { tableData } from "../ecommerceContant";
 const ProductsTable = () => {
 	return (
 		<div className="overflow-hidden w-full max-w-6xl mx-auto overflow-x-auto rounded-lg border border-gray-200">
@@ -32,23 +33,17 @@ const ProductsTable = () => {
 							</td>
 							<td className="whitespace-nowrap px-4 py-3 ">{each.title}</td>
 							<td className="whitespace-nowrap px-4 py-3 ">{each.category}</td>
-							<td className="whitespace-nowrap px-4 py-3 ">{each.quantity}</td>
-							{each.status === "paid" && (
-								<td className="whitespace-nowrap px-4 py-3">
-									<strong className="rounded bg-green-100 py-1 px-2 text-xs font-medium text-green-700">Paid</strong>
-								</td>
-							)}
-							{each.status === "cancelled" && (
-								<td className="whitespace-nowrap px-4 py-3">
-									<strong className="rounded bg-red-100 py-1 px-2 text-xs font-medium text-red-700">Cancelled</strong>
-								</td>
-							)}
-							{each.status === "refunded" && (
-								<td className="whitespace-nowrap px-4 py-3">
-									<strong className="rounded bg-amber-100 py-1 px-2 text-xs font-medium text-amber-700">Partially Refunded</strong>
-								</td>
-							)}
-							<td className="whitespace-nowrap px-4 py-3 ">{each.status === "paid" ? "available" : ""}</td>
+							<td className="whitespace-nowrap px-4 py-3 ">₹ {each.price}.00</td>
+							<td className="whitespace-nowrap px-4 py-3">
+								<span className="border-[1.5px] cursor-pointer border-red-600 hover:bg-red-600 hover:text-light duration-300 inline-flex items-center text-xl pb-[1px] pl-[1px]  justify-center rounded-full text-red-600 w-4 h-4">
+									-
+								</span>
+								<span className="inline-block text-center  w-10 ">{each.quantity}</span>
+								<span className="border-[1.5px] cursor-pointer border-green-600 hover:bg-green-600 hover:text-light duration-300  inline-flex items-center justify-center font-semibold pl-[1px] rounded-full text-green-600 w-4 h-4">
+									+
+								</span>
+							</td>
+							<td className="whitespace-nowrap px-4 py-3 text-green-600"> In stock</td>
 						</tr>
 					))}
 				</tbody>

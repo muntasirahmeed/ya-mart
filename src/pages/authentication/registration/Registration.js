@@ -20,7 +20,7 @@ const Registration = () => {
 					</div>
 				</div>
 				<div className="flex-1 ">
-					<div className="max-w-sm ml-16 w-full">
+					<div className="max-w-sm ml-16  w-full">
 						<AuthPageTopInfo title={"Sign up"} subtitle={"Already have an account? "} linkText="Sign in" path="/login" />
 						<RegistrationForm />
 					</div>

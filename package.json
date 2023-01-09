@@ -1,5 +1,5 @@
 {
-	"name": "y-mart",
+	"name": "ya-mart",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
@@ -12,6 +12,7 @@
 		"apexcharts": "^3.36.3",
 		"react": "^18.2.0",
 		"react-apexcharts": "^1.4.0",
+		"react-custom-scrollbars": "^4.2.1",
 		"react-dom": "^18.2.0",
 		"react-pro-sidebar": "^1.0.0-alpha.9",
 		"react-router-dom": "^6.6.1",

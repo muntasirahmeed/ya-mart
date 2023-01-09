@@ -10,7 +10,7 @@ const RegistrationForm = () => {
 		e.preventDefault();
 	};
 	return (
-		<form onSubmit={handleFormSubmit} className="space-y-4">
+		<form onSubmit={handleFormSubmit} className="space-y-4 ">
 			<div>
 				<FormLabel text={"Full Name"} />
 				<input required type="text" className={FormInputClass} placeholder="John Due" />

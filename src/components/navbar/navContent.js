@@ -1,19 +1,24 @@
-import {faPhone, faShoppingCart} from "@fortawesome/free-solid-svg-icons";
+import {faHouse, faPhone, faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 
 export const navContent = {
 	sidenav: [
 		{
 			id: 0,
+			icon: faHouse,
+			title: "Dashboard",
+			path: "/",
+		},
+		{
+			id: 1,
 			icon: faPhone,
 			title: "Contact",
 			subMenu: [
-				{id: 1, title: "Chats", path: "/products"},
-				{id: 2, title: "Customer Helpline", path: "/products"},
+				{id: 1, title: "Chats", path: ""},
+				{id: 2, title: "Customer Helpline", path: ""},
 			],
 		},
-
 		{
-			id: 1,
+			id: 2,
 			icon: faShoppingCart,
 			title: "E-Commerce",
 			subMenu: [

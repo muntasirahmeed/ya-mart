@@ -40,7 +40,9 @@ const LoginForm = () => {
 						Remember me
 					</label>
 				</div>
-				<Link className="text-primary font-medium">Forgot Password?</Link>
+				<Link to="/forgot-password" className="text-primary font-medium">
+					Forgot Password?
+				</Link>
 			</div>
 			<div className="pt-2">
 				<button type="submit" className="w-full rounded-full py-2 bg-primary hover:bg-indigo-500 duration-300 text-white">
