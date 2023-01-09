@@ -11,7 +11,7 @@ const DashboardLayout = ({children}) => {
 				<TopBar hideSideBar={hideSideBar} setHideSideBar={setHideSideBar} />
 				<DashboardRightMessageNav />
 			</div>
-			<div className={`h-20 w-full pr-[88px] pt-[50px] ${hideSideBar ? "pl-6" : "pl-[264px]"} duration-500`}>{children}</div>
+			<div className={`h-full relative  w-full pr-[88px] pt-[50px] ${hideSideBar ? "pl-6" : "pl-[264px]"} duration-500`}>{children}</div>
 		</div>
 	);
 };

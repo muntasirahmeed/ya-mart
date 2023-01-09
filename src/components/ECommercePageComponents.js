@@ -7,6 +7,8 @@ export const PageTitle = ({title}) => {
 
 export const menDummyImg =
 	"https://img.freepik.com/free-photo/portrait-successful-man-having-stubble-posing-with-broad-smile-keeping-arms-folded_171337-1267.jpg?w=2000";
+	
+export const albumImg = "../asset/images/album.jpeg";
 
 export const Pagination = ({pageNo}) => {
 	return (

@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React from "react";
 import {Link} from "react-router-dom";
 import ECommerceLayout from "../../../components/layouts/ECommerceLayout";
-import Tabs from "./Tabs";
+import ProductDetailsTabs from "./ProductDetailsTabs";
 const ProductDetails = () => {
 	return (
 		<ECommerceLayout>
@@ -37,7 +37,7 @@ const ProductDetails = () => {
 					</div>
 				</div>
 				<div className="mt-10 pb-10">
-					<Tabs />
+					<ProductDetailsTabs />
 				</div>
 			</div>
 		</ECommerceLayout>

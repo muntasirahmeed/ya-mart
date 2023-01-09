@@ -1,18 +1,14 @@
 import React, {useState} from "react";
-import BasicInfo from "./tabs/BasicInfo";
-import ImageUpload from "./tabs/ImageUpload";
-import Inventory from "./tabs/Inventory";
-import Pricing from "./tabs/Pricing";
-import Shipping from "./tabs/Shipping";
-const Tabs = () => {
+import Details from "./tabs/details/Details";
+import Product from "./tabs/Product";
+import Invoice from "./tabs/Invoice";
+const OrderDetailsTabs = () => {
 	const [active, setActive] = useState(0);
 	const [clicked, setClicked] = useState(0);
 	const blocks = [
-		{id: 0, name: "Basic Info", icons: ""},
-		{id: 1, name: "Product Images", icons: ""},
-		{id: 2, name: "Pricing", icons: ""},
-		{id: 3, name: "Inventory", icons: ""},
-		{id: 4, name: "Shipping", icons: ""},
+		{id: 0, name: "Order Details", icons: ""},
+		{id: 1, name: "Product", icons: ""},
+		{id: 2, name: "Invoice", icons: ""},
 	];
 	const handleActive = (index) => {
 		setActive(index);
@@ -33,15 +29,13 @@ const Tabs = () => {
 					</button>
 				))}
 			</nav>
-			<div className="mt-8 mb-5">
-				{active === 0 && <BasicInfo />}
-				{active === 1 && <ImageUpload />}
-				{active === 2 && <Pricing />}
-				{active === 3 && <Inventory />}
-				{active === 4 && <Shipping />}
+			<div className="mt-5 mb-5">
+				{active === 0 && <Details />}
+				{active === 1 && <Product />}
+				{active === 2 && <Invoice />}
 			</div>
 		</div>
 	);
 };
 
-export default Tabs;
+export default OrderDetailsTabs;
