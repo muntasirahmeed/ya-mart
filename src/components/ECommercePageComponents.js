@@ -55,3 +55,5 @@ export const tableData = {
 		{id: 14, title: "Reaching - Canvas Print", category: "Canvas Print", quantity: 10, status: "refunded"},
 	],
 };
+export const menDummyImg =
+	"https://img.freepik.com/free-photo/portrait-successful-man-having-stubble-posing-with-broad-smile-keeping-arms-folded_171337-1267.jpg?w=2000";

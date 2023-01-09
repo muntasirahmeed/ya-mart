@@ -7,10 +7,10 @@ const ImageUpload = () => {
 	return (
 		<div>
 			<div className="flex flex-wrap gap-4">
-				<label class="cursor-pointer h-32 w-[125.5px] p-2 text-gray-500 border rounded-md flex flex-col items-center  justify-center text-3xl">
+				<label className="cursor-pointer h-32 w-[125.5px] p-2 text-gray-500 border rounded-md flex flex-col items-center  justify-center text-3xl">
 					<FontAwesomeIcon icon={faUpload} />
-					<span class="mt-2 block text-sm leading-normal">Upload Files</span>
-					<input type="file" class="hidden" />
+					<span className="mt-2 block text-sm leading-normal">Upload Files</span>
+					<input type="file" className="hidden" />
 				</label>
 				{productImg.map((each) => (
 					<div key={each} className="h-32  w-[125.5px]  p-2 border rounded-md">
