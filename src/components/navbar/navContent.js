@@ -9,15 +9,6 @@ export const navContent = {
 			path: "/",
 		},
 		{
-			id: 1,
-			icon: faPhone,
-			title: "Contact",
-			subMenu: [
-				{id: 1, title: "Chats", path: ""},
-				{id: 2, title: "Customer Helpline", path: ""},
-			],
-		},
-		{
 			id: 2,
 			icon: faShoppingCart,
 			title: "E-Commerce",
@@ -27,6 +18,15 @@ export const navContent = {
 				{id: 3, title: "New Products", path: ""},
 				{id: 4, title: "Orders", path: "/orders"},
 				{id: 5, title: "Order Details", path: "/order-details"},
+			],
+		},
+		{
+			id: 1,
+			icon: faPhone,
+			title: "Contact",
+			subMenu: [
+				{id: 1, title: "Chats", path: ""},
+				{id: 2, title: "Customer Helpline", path: ""},
 			],
 		},
 	],

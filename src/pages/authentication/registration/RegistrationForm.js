@@ -1,61 +1,66 @@
-import {faEye, faEyeSlash} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import {FormInputClass, FormLabel} from "../../../components/AuthPageComponents";
+import {FormCheckBox, FormInputComp, FormInputPasswordComp, FormLabel, FormSubmitButton} from "../../../components/AuthPageComponents";
+import useRegistrationFormValidation from "../../../hooks/useRegistrationFormValidation";
 
 const RegistrationForm = () => {
 	const [showPassword, setShowPassword] = useState(false);
-	const handleFormSubmit = (e) => {
-		e.preventDefault();
-	};
+	const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+	const {formError, handleFormSubmit} = useRegistrationFormValidation();
 	return (
 		<form onSubmit={handleFormSubmit} className="space-y-4 ">
 			<div>
 				<FormLabel text={"Full Name"} />
-				<input required type="text" className={FormInputClass} placeholder="John Due" />
+				<FormInputComp type="text" name="name" placeholder="Enter Full Name" />
 			</div>
 			<div>
 				<FormLabel text={"Email Address"} />
-				<input required type="text" className={FormInputClass} placeholder="example@gmail.com" />
+				<FormInputComp type="email" name="email" placeholder="Enter Email Address" />
+			</div>
+			<div>
+				<FormLabel text={"Phone Number"} />
+				<FormInputComp type="tel" name="phone" placeholder="Enter Phone Number" />
 			</div>
 			<div>
 				<FormLabel text={"Password"} />
-				<div className="relative">
-					<input required type={showPassword ? "text":"password"} className={FormInputClass} placeholder="Enter Password" />
-					<FontAwesomeIcon
-						onClick={() => setShowPassword(!showPassword)}
-						className="absolute right-3 top-3.5 text-gray-500 cursor-pointer"
-						icon={showPassword ? faEyeSlash : faEye}
-					/>
-				</div>
+				<FormInputPasswordComp
+					type="password"
+					name="password"
+					placeholder="Enter password"
+					showPassword={showPassword}
+					setShowPassword={setShowPassword}
+				/>
 			</div>
 			<div>
-				<FormLabel text={"Company"} />
-				<input required type="text" className={FormInputClass} placeholder="Example Software Agency" />
+				<FormLabel text={"Confirm Password"} />
+				<FormInputPasswordComp
+					type="password"
+					name="confirmPass"
+					placeholder="Enter Confirm password"
+					showPassword={showConfirmPassword}
+					setShowPassword={setShowConfirmPassword}
+				/>
+				{formError && <p className="text-red-600 text-sm mt-2">{formError}</p>}
+			</div>
+			<div>
+				<FormLabel text={"Business Name"} />
+				<FormInputComp type="text" name="business" placeholder="Enter Business Name" />
 			</div>
 			<div className="flex items-center gap-2 text-sm text-muted tracking-wide">
-				<input
-					required
-					type="checkbox"
-					id="agree-with-condition"
-					className="w-3.5 h-3.5 rounded border-gray-300 text-primary focus:ring-primary"
-				/>
+				<FormCheckBox id="agree-with-condition" name="checkbox" />
 				<label htmlFor="agree-with-condition" className="cursor-pointer flex items-center gap-1">
-					<span>I agree with</span>
+					I agree with
 					<Link to="/terms-and-conditions" className="text-primary font-medium ">
 						Terms
 					</Link>
-					<span>and</span>
+					and
 					<Link to="/privacy-and-policy" className="text-primary font-medium ">
 						Privacy Policy
 					</Link>
 				</label>
 			</div>
 			<div className="pt-2">
-				<button type="submit" className="w-full rounded-full py-2 bg-primary hover:bg-indigo-500 duration-300 text-white">
-					Sign up
-				</button>
+				<FormSubmitButton text="Sign up" />
 			</div>
 		</form>
 	);

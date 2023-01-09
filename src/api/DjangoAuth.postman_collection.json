@@ -43,14 +43,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\":\"8534867764\",\n    \"password\":\"admin\"\n}",
+					"raw": "{\n \"username\":\"8534867764\",\n    \"password\":\"admin\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://127.0.0.1:8500/auth/login/"
+				"url": "http://3.110.167.166:8500/auth/login"
 			},
 			"response": []
 		},

@@ -4,6 +4,7 @@ import Logout from "../pages/authentication/Logout";
 import PrivacyAndPolicy from "../pages/authentication/PrivacyAndPolicy";
 import Registration from "../pages/authentication/registration/Registration";
 import TermsAndCondition from "../pages/authentication/TermsAndCondition";
+import VerifyOTP from "../pages/authentication/VerifyOTP";
 import Dashboard from "../pages/dashboard/Dashboard";
 import OrderDetails from "../pages/ecommerce/order-details/OrderDetails";
 import Orders from "../pages/ecommerce/orders/Orders";
@@ -22,4 +23,5 @@ export const publicRoutes = [
 	{id: 9, path: "/product-details", Page: ProductDetails},
 	{id: 10, path: "/orders", Page: Orders},
 	{id: 11, path: "/order-details", Page: OrderDetails},
+	{id: 12, path: "/verify-otp", Page: VerifyOTP},
 ];

@@ -20,7 +20,18 @@
 }
 .css-qbdosj-Input:focus {
 	/* box-shadow: 1px 0 0 0 calc(1px + 0) var(#4f46e5) !important; */
-  border: none !important;
-  
+	border: none !important;
+
 	box-shadow: #4f46e5 !important;
+}
+/* for otp verified modal  */
+.modal__backdrop {
+	background: rgba(0, 0, 0, 0.65);
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 11;
 }

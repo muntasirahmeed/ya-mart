@@ -1,4 +1,4 @@
-import {faBell} from "@fortawesome/free-solid-svg-icons";
+
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React from "react";
 import {Link} from "react-router-dom";
@@ -14,14 +14,11 @@ const SideBar = ({hideSideBar}) => {
 			} fixed text-light text-sm z-50 w-60 duration-500 h-screen   bg-slate-900 flex-shrink-0 overflow-auto`}
 		>
 			<div className="h-full relative">
-				<div className="h-[50px]  px-3 flex items-center justify-between">
+				<div className="h-[50px]  px-3 flex items-center gap-2">
 					<img src={logo} className="h-9" alt="" />
-					<div className="relative cursor-pointer">
-						<FontAwesomeIcon className="text-2xl hover:text-gray-400 duration-300 text-gray-200 mr-2.5" icon={faBell} />
-						<span className="w-[17px] h-[17px] inline-flex  items-center justify-center absolute  -top-1.5 -right-1 text-[10px] font-medium  rounded-full text-light bg-indigo-600 pt-[1px]">
-							5
-						</span>
-					</div>
+					<h2 className="text-yellow-500 font-bold text-xl mt-3.5 uppercase">
+						<span className="text-white">Ya</span>-Mart
+					</h2>
 				</div>
 				<div className="pb-10">
 					<div className="flex flex-col items-center mt-5 mb-5">
@@ -41,14 +38,6 @@ const SideBar = ({hideSideBar}) => {
 							),
 						)}
 					</div>
-				</div>
-				<div className="text-white absolute flex flex-col bottom-3 px-3 inset-x-0 items-center justify-center gap-2">
-					<Link to="" className="bg-primary py-2 px-5 rounded-full text-center w-full">
-						Purchase Fuse React
-					</Link>
-					<Link to="" className="bg-gray-500 py-2 px-5 rounded-full text-center w-full">
-						See Documentations
-					</Link>
 				</div>
 			</div>
 		</div>
