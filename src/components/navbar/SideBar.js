@@ -13,6 +13,7 @@ const SideBar = ({hideSideBar}) => {
 				hideSideBar ? "-translate-x-64" : "-translate-x-0 "
 			} fixed text-light text-sm z-50 w-60 duration-500 h-screen   bg-slate-900 flex-shrink-0 overflow-auto`}
 		>
+			<div className="h-full relative">
 				<div className="h-[50px]  px-3 flex items-center justify-between">
 					<img src={logo} className="h-9" alt="" />
 					<div className="relative cursor-pointer">
@@ -41,6 +42,15 @@ const SideBar = ({hideSideBar}) => {
 						)}
 					</div>
 				</div>
+				<div className="text-white absolute flex flex-col bottom-3 px-3 inset-x-0 items-center justify-center gap-2">
+					<Link to="" className="bg-primary py-2 px-5 rounded-full text-center w-full">
+						Purchase Fuse React
+					</Link>
+					<Link to="" className="bg-gray-500 py-2 px-5 rounded-full text-center w-full">
+						See Documentations
+					</Link>
+				</div>
+			</div>
 		</div>
 	);
 };
